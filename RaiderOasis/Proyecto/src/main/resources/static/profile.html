@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Raider Oasis</title>
+    <!-- METADATA -->
+    <meta charset="utf-8">
+    <meta name="description" content="Raider Oasis Online Game">
+    <meta name="author" content="">
+    <meta name="keywords" content="juegos en red, online game, raider oasis, game">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- IMPORT --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- (Bootstrap) Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet"> <!-- Google font -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- jQuery library -->    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- (Bootstrap) Latest compiled JavaScript -->
+
+    <script src="js/login.js"></script>
+    <script src="js/cookies.js"></script>
+</head>
+    
+
+<body>
+    <!-- NAVBAR SUPERIOR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- El toggle para cuando la página es demasiado estrecha y el menú se transforma en un dropdown -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <!-- Nombre de la web (a la izquierda) -->
+            <a class="navbar-brand" href="#">Raider Oasis</a>
+          </div>
+          <!-- Contenido del menú de la navbar en si (a la derecha) -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- li: list-item, puede estar activo (seleccionado) o disabled (no se puede pulsar)
+              a: redirecciona a la página que corresponde, al ser paginas locales simplemente se escribe el nombre del html
+              span class = "glyphicon-x" : coloca el glyphicon indicado (vienen con bootstrap) el contenido se deja vacío -->
+              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="game.html"><span class="glyphicon glyphicon-play"></span> Play!</a></li>
+              <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+              <li class="active"><a href="leaderboards.html"><span class="glyphicon glyphicon-king"></span> Leaderboards</a></li>
+              <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON CON EL LOGO -->
+    <!-- En la página principal contiene el nombre del juego, pero aquí solo ocupa el espacio para dejar hueco entre el navbar y el contenido -->
+    <div class="jumbotron" id="logo">
+    </div>
+
+    <!-- BLOQUE DE CONTENIDO -->
+<div class="container-fluid text-center" id="wrap" style="margin-top: 4em;">    
+  <div class="row content">
+
+    <div class="col-sm-3 sidenav">
+        <!-- Aqui se pueden poner cosas extra -->
+    </div>
+    
+    <!-- CONTENIDO DEL PERFIL -->
+    <div class="col-sm-6 text-center"> 
+      <h1>Tu perfil</h1>
+      <div id="cosasdelperfil">
+      	<p id="username"></p>
+      	<p id="clave"></p>
+      	<p id="puntuacionMax"></p>
+      	<button type="button" class="btn btn-login-box" id="btn-logout" onclick="logout()">Log out</button> 
+      </div>
+    </div>
+
+    <div class="col-sm-3 sidenav">
+      <!-- Aqui se pueden poner cosas extra -->
+    </div>
+
+  </div>
+
+  </div>
+  
+     <!-- FOOTER DE LA PÁGINA -->
+  <footer class="container-fluid text-center">
+      <p>Práctica para la asignatura Juegos en Red del grado de Diseño y Desarrollo de Videojuegos de la URJC realizada por Víctor, Ángel, Nicolás.</p>
+  </footer>
+</body>
